@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumOfDigits(num) {
+            return num.toString().split('').map(Number).reduce((acc, curr) => acc + curr, 0);
+        }
+
+        let inputNumber = 12345;
+        let sum = sumOfDigits(inputNumber);
+        console.log(sum);
+    </script>
+</body>
+
+</html>

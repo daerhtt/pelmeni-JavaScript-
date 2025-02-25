@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkDivisibility(num1, num2) {
+            if (num2 === 0) {
+                console.log("Деление на ноль невозможно.");
+                return;
+            }
+
+            if (num1 % num2 === 0) {
+                console.log(`${num1} делится на ${num2} без остатка.`);
+            } else {
+                console.log(`${num1} не делится на ${num2} без остатка.`);
+            }
+        }
+
+        const firstNumber = 632;
+        const secondNumber = 2;
+        checkDivisibility(firstNumber, secondNumber);
+    </script>
+</body>
+
+</html>

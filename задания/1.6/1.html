@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumOfSquares(arr) {
+            return arr.reduce((sum, num) => sum + num * num, 0);
+        }
+
+        let numbers = [1, 2, 3, 4];
+        let result = sumOfSquares(numbers);
+        console.log(result); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sumOfNumbersInRange(arr) {
+            return arr.reduce((sum, num) => {
+                return (num > 0 && num < 10) ? sum + num : sum;
+            }, 0);
+        }
+
+        let numbers = [1, 2, 10, 5, -3, 8, 12];
+        let result = sumOfNumbersInRange(numbers);
+        console.log(result);
+    </script>
+</body>
+
+</html>

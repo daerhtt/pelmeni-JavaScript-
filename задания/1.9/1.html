@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let strings = [
+            "https://code.mu/ru/javascript/tasker/stager/1/9/",
+            "http://www.antiterror.ru/",
+            "http://scienceport.ru/",
+            "https://www.kaspersky.ru/blog/https-does-not-mean-safe/19464/",
+            "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5_%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B8"
+        ];
+
+        let httpStrings = strings.filter(str => str.startsWith("http://"));
+
+        console.log(httpStrings);
+    </script>
+</body>
+
+</html>
